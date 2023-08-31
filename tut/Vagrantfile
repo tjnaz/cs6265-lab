@@ -2,10 +2,10 @@ Vagrant.configure('2') do |config|
 
   config.vm.box = 'ubuntu/bionic64'
 
-  config.vm.provision "file", source: "./kflag", destination: "/home/vagrant/kflag"
-  config.vm.provision "file", source: "./tuts", destination: "/home/vagrant/tuts"
-  config.vm.provision "file", source: "./seclab", destination: "/home/vagrant/seclab"
-  config.vm.provision "file", source: "./setup.sh", destination: "/home/vagrant/setup.sh"
+  config.vm.provision "file", source: "./kflag", destination: "/Users/anaz/Documents/projects/secLab/cs6265-lab/tut/kflag"
+  config.vm.provision "file", source: "./tuts", destination: "/Users/anaz/Documents/projects/secLab/cs6265-lab/tut/tuts"
+  config.vm.provision "file", source: "./seclab", destination: "/Users/anaz/Documents/projects/secLab/cs6265-lab/tut/seclab"
+  config.vm.provision "file", source: "./setup.sh", destination: "/Users/anaz/Documents/projects/secLab/cs6265-lab/tut/setup.sh"
   config.vm.provision "shell", path: "./setup.sh"
 
   # no shared folder
